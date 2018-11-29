@@ -1,20 +1,20 @@
 # GoSimhash for Chinese Documents
 
-[![Build Status](https://travis-ci.org/HaoyuHu/gosimhash.svg?branch=master)](https://travis-ci.org/HaoyuHu/gosimhash) 
-[![Coverage Status](https://coveralls.io/repos/github/HaoyuHu/gosimhash/badge.svg?branch=master)](https://coveralls.io/github/HaoyuHu/gosimhash?branch=master)
+[![Build Status](https://travis-ci.org/fleiheit/gosimhash.svg?branch=master)](https://travis-ci.org/fleiheit/gosimhash) 
+[![Coverage Status](https://coveralls.io/repos/github/fleiheit/gosimhash/badge.svg?branch=master)](https://coveralls.io/github/fleiheit/gosimhash?branch=master)
 [![License](https://img.shields.io/badge/license-MIT-yellow.svg?style=flat)](http://mit-license.huhaoyu.com)
 
 ## Usage
 
 ```
-go get github.com/HaoyuHu/gosimhash
+go get github.com/fleiheit/gosimhash
 ```
 
 ### Usage of Package
 
 ```golang
 import (
-	"github.com/HaoyuHu/gosimhash"
+	"github.com/fleiheit/gosimhash"
 )
 
 func getSimhash() {
@@ -50,8 +50,8 @@ What's more, you can customize the hash algorithm(currently support siphash and 
 
 ```golang
 import (
-	"github.com/HaoyuHu/gosimhash"
-	"github.com/HaoyuHu/gosimhash/utils"
+	"github.com/fleiheit/gosimhash"
+	"github.com/fleiheit/gosimhash/utils"
 )
 ...
 sip := utils.NewSipHasher([]byte(gosimhash.DEFAULT_HASH_KEY))
